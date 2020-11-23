@@ -181,7 +181,7 @@ nav>ul {
 }
 
 #link {
-    margin-top: 75px;
+    margin-top: 200px;
     color: blue;
     display: inline-block;
 }
@@ -196,7 +196,7 @@ nav>ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 20px;
 }
 
@@ -355,14 +355,14 @@ footer>span {
         display: none;
     }
     #link {
-        margin-top: 150px;
+        margin-top: 200px;
         display: flex;
         justify-content: center;
         text-align: center;
         border-top: 50px;
     }
     #link2 {
-        margin-top: 150px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -421,10 +421,10 @@ footer>span {
         color: #444;
     }
     #link {
-        margin-top: 220px;
+        margin-top: 300px;
     }
     #link2 {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 }
 
@@ -460,7 +460,7 @@ footer>span {
         padding-left: 1em;
     }
     #difference {
-        margin-top: 75px;
+        margin-top: 200px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -478,16 +478,6 @@ footer>span {
     }
     #difference .icon {
         display: none;
-    }
-    #link {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    #link2 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
     }
 }
 

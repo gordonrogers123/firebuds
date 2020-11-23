@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="productpage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&effect=fire-animation" rel="stylesheet" />
+    <script src="productpage.js"></script>
+    <script src="https://kit.fontawesome.com/4e854f99b8.js" crossorigin="anonymous"></script>
+    <title>FireBuds | Homemade Hot Sauce</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/pepper4.ico" />
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <!--Header-->
+        <header id="header">
+            <div class="logo" onclick="window.location.href='productpage.html'">
+                <img id="header-img" src="img/logo.png" alt="FireBuds logo" />
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="productpage.html">Home</a></li>
+                    <li><a class="nav-link" href="productpage.html#flavors">Gallery</a></li>
+                    <li><a class="nav-link" href="ourfans.html">Our Fans</a></li>
+                    <li><a class="nav-link" href="media.html">Media</a></li>
+                    <li><a class="nav-link" href="store.html">Store</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Title and Subtitles-->
+        <div class="container" id="Home">
+            <h1 id="title">
+                <b class="font-effect-fire-animation">FireBuds</b>
+                <b class="subtitle">Homemade Hot Sauce</b>
+            </h1>
+            <p id="subtitle">Guaranteed to burn your buds off!</p>
+        </div>
+
+        <!-- Bullet point info about the brand -->
+        <div class="bullet_pts">
+            <section id="difference">
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-pepper-hot fa-3x"></i></div>
+                    <div class="desc">
+                        <h2 id="dif-head">The FireBuds Difference</h2>
+                        <p id="points">
+                            FireBuds is a premium, small batch, all organic flavor experience unlike anything you've ever experienced. Each Hot Box is custom made to your specific taste profile by our team of culinary professionals.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid" id="flavors">
+                    <div class="icon"><i class="fas fa-globe-americas fa-3x"></i></div>
+                    <div class="desc">
+                        <h2 id="dif-head">Authentic Flavors</h2>
+                        <p id="points">
+                            Our brands include unique flavor profiles curated from around the world, to give you authentic, one of a kind spice experiences. We offer Hot Boxes to match anyone's style, from the flavors of Latin American, Asia, and Afro-Caribbean regions.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-box fa-3x"></i></div>
+                    <div class="desc">
+                        <h2 id="dif-head">The Perfect Gift</h2>
+                        <p id="points">
+                            Try one today, and share with your friends and family. FireBuds Hot Boxes make the perfect gift.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Image Carousel-->
+        <!--Carousel code referenced and modified from w3schools.com/howto/howto_js_slideshow.asp-->
+
+        <div class="slideshow-container" id="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade" style="display: block;">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/1.jpg" alt="Garlic Scotch Bonnet" style="width: 100%" />
+                <div class="text">Garlic Scotch Bonnet</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/2.jpg" alt="Ghost Pepper Sauce" style="width: 100%" />
+                <div class="text">Ghost Pepper Sauce</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/3.jpg" alt="Sriracha Sauce" style="width: 100%" />
+                <div class="text">Sriracha Hot Sauce</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/4.jpg" alt="Datil Pepper Sauce" style="width: 100%" />
+                <div class="text">Datil Pepper Sauce</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/5.jpg" alt="Fire Water" style="width: 100%" />
+                <div class="text">Fire Water</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/6.jpg" alt="Hatian Hot Sauce" style="width: 100%" />
+                <div class="text">Hatian Hot Sauce</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <p style="text-align:center">Images from chilipeppermadness.com</p>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+
+
+        <!-- Product offerings -->
+        <section id="pricing">
+            <div class="product" id="latin">
+                <div class="flavor">Latin America</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Mexican Habanero Sauce</li>
+                    <li>Peruvian Aji Amarillo</li>
+                    <li>Chilean Pebre Sauce</li>
+                </ul>
+                <button class="popup" onclick="popUp1()">Select
+                    <span class="popuptext" id="myPopup_1">Out of Stock</span>
+                </button>
+            </div>
+            <div class="product" id="afrocaribbean">
+                <div class="flavor">Afro Caribbean</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Jamacian Mango Habanero</li>
+                    <li>African Peri Peri</li>
+                    <li>Ti-Malice Scotchbonnet</li>
+                </ul>
+                <button class="popup" onclick="popUp2()">Select
+                    <span class="popuptext" id="myPopup_2">Out of Stock</span>
+                </button>
+            </div>
+            <div class="product" id="asian">
+                <div class="flavor">Asian Inspired</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Sriracha Hot Sauce</li>
+                    <li>Indonesian Sambal Oelek</li>
+                    <li>Gochujang Chili Sauce</li>
+                </ul>
+                <button class="popup" onclick="popUp3()">Select
+                    <span class="popuptext" id="myPopup_3">Out of Stock</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Email Sign Up -->
+        <section id="signup">
+            <h2>Sign up for our mailing list, The Burn Notice!</h2>
+            <form id="form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+                <input id="submit" type="submit" value="Get Burnt!" class="btn" />
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="legal.html">Privacy</a></li>
+                <li><a href="legal.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span>Copyright 2020, FireBuds, LLC</span>
+        </footer>
+    </div>
+</body>
+
+</html>

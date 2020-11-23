@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="store.css" />
+    <script src="store.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&effect=fire-animation" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4e854f99b8.js" crossorigin="anonymous"></script>
+    <title>FireBuds | Homemade Hot Sauce</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/pepper4.ico" />
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <!--Header-->
+        <header id="header">
+            <div class="logo" onclick="window.location.href='productpage.html'">
+                <img id="header-img" src="img/logo.png" alt="FireBuds logo" />
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="productpage.html">Home</a></li>
+                    <li><a class="nav-link" href="productpage.html#flavors">Gallery</a></li>
+                    <li><a class="nav-link" href="ourfans.html">Our Fans</a></li>
+                    <li><a class="nav-link" href="media.html">Media</a></li>
+                    <li><a class="nav-link" href="store.html">Store</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Title and Subtitles-->
+        <div class="container" id="Home">
+            <h1 id="title">
+                <b class="font-effect-fire-animation">FireBuds</b>
+                <b class="subtitle">Homemade Hot Sauce</b>
+            </h1>
+            <p id="subtitle">Guaranteed to burn your buds off!</p>
+        </div>
+        <h2 id="choose">Choose one of our Award Winning Combinations!</h2>
+        <!-- Product offerings -->
+        <section id="pricing">
+
+            <div class="product" id="latin">
+                <div class="flavor">Latin America</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Mexican Habanero Sauce</li>
+                    <li>Peruvian Aji Amarillo</li>
+                    <li>Chilean Pebre Sauce</li>
+                </ul>
+                <button class="popup" onclick="popUp1()">Select
+                    <span class="popuptext" id="myPopup_1">Out of Stock</span>
+                </button>
+            </div>
+            <div class="product" id="afrocaribbean">
+                <div class="flavor">Afro Caribbean</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Jamacian Mango Habanero</li>
+                    <li>African Peri Peri</li>
+                    <li>Ti-Malice Scotchbonnet</li>
+                </ul>
+                <button class="popup" onclick="popUp2()">Select
+                    <span class="popuptext" id="myPopup_2">Out of Stock</span>
+                </button>
+            </div>
+            <div class="product" id="asian">
+                <div class="flavor">Asian Inspired</div>
+                <h2>$40</h2>
+                <ul>
+                    <li>Sriracha Hot Sauce</li>
+                    <li>Indonesian Sambal Oelek</li>
+                    <li>Gochujang Chili Sauce</li>
+                </ul>
+                <button class="popup" onclick="popUp3()">Select
+                    <span class="popuptext" id="myPopup_3">Out of Stock</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Email Sign Up -->
+        <section id="signup">
+            <h2>Sign up for our mailing list, The Burn Notice!</h2>
+            <form id="form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+                <input id="submit" type="submit" value="Get Burnt!" class="btn" />
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="legal.html">Privacy</a></li>
+                <li><a href="legal.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span>Copyright 2020, FireBuds, LLC</span>
+        </footer>
+    </div>
+</body>
+
+</html>

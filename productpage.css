@@ -1,0 +1,634 @@
+/** global class styling **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #EEE;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+li {
+    list-style: none;
+    list-style-type: none
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/** global class styling **/
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bullet_pts {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 100px;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    min-width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    box-shadow: 2px 2px 8px #000000;
+    justify-content: space-around;
+    font-size: 1.25em;
+    z-index: 100;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+nav {
+    font-weight: 500;
+}
+
+nav>ul {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+    justify-items: center;
+    padding-left: 50px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin-top: 200px;
+    font-size: 3em;
+}
+
+.font-effect-fire-animation {
+    font-size: 1.5em;
+}
+
+#subtitle {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #444;
+}
+
+
+/** Carousel **/
+
+
+/** Carousel **/
+
+
+/* Carousel code referenced and modified from w3schools.com/howto/howto_js_slideshow.asp */
+
+.slideshow-container {
+    max-width: 480px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: darkorange;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: darkorange;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/** Carousel End **/
+
+
+/* Out of stock pop-up  */
+
+
+/* Popup container Referenced and modified from https://www.w3schools.com/howto/howto_js_popup.asp*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border: 1px solid #e0e0e0;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+
+/* The actual popup (appears on top) */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#signup>h2 {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+#signup input[type="email"] {
+    max-width: 275px;
+    width: 150%;
+    padding: 5px;
+}
+
+#signup input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#signup input[type="submit"]:hover {
+    background-color: #fe3b05;
+    transition: background-color 1s;
+}
+
+#dif-head {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#points {
+    padding-bottom: 10px;
+}
+
+#difference .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 8vw;
+    color: darkorange;
+    margin: 20px;
+    padding-bottom: 13px;
+    padding-left: 50px;
+}
+
+#difference .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 20px;
+}
+
+#rap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#rap>iframe {
+    max-width: 560px;
+    width: 100%;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+.product>.flavor {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 2px 2px px #000000;
+}
+
+.product>h2 {
+    margin-top: 15px;
+}
+
+.product>ol {
+    margin: 15px 0;
+}
+
+.product>ol>li {
+    padding: 5px 0;
+}
+
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border: 1px solid #e0e0e0;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+.product>button:hover {
+    background-color: #fe3b05;
+    transition: background-color 1s;
+}
+
+.flavor {
+    background-color: #e0e0e0;
+    text-transform: uppercase;
+    border: #e0e0e0;
+    font-size: 1.5em;
+    justify-content: space-around;
+}
+
+#signup {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+#email {
+    margin: 10px;
+}
+
+#submit {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 200;
+    border: 1px solid #e0e0e0;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+#submit:hover {
+    background-color: #fe3b05;
+    transition: background-color 1s;
+}
+
+footer {
+    background-color: #e0e0e0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.95em;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        width: 100%;
+        position: relative;
+        align-self: center;
+    }
+    .container {
+        margin-top: 300px;
+    }
+    .logo>img {
+        margin: 0 auto;
+        align-self: auto;
+    }
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+    nav li {
+        padding-bottom: 5px;
+    }
+    nav>ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 1em;
+    }
+    #subtitle {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5em;
+        color: #444;
+    }
+}
+
+#home {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 60vw;
+        align-content: center;
+    }
+    .font-effect-fire-animation {
+        display: none;
+    }
+    #subtitle {
+        display: none;
+    }
+    #difference .icon {
+        display: none;
+    }
+    nav>ul {
+        padding-left: 1em;
+    }
+    #difference .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+        margin: 20px;
+    }
+    .subtitle {
+        padding-top: 75px;
+        text-align: center;
+    }
+    #subtitle {
+        padding-top: 35px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5em;
+        color: #444;
+    }
+}
+
+@media (max-width: 550px) {
+    #difference .icon {
+        display: none;
+    }
+    #difference .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+    .font-effect-fire-animation {
+        display: none;
+    }
+    #subtitle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5em;
+        color: #444;
+    }
+}
